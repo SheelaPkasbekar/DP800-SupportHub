@@ -11,7 +11,9 @@ CREATE TABLE dbo.Products
     ProductId INT PRIMARY KEY,
     ProductName NVARCHAR(100) NOT NULL,
     Category NVARCHAR(100),
-    Price DECIMAL(10,2)
+    Price DECIMAL(10,2),
+    StockQuantity INT
+    
 );
 
 CREATE TABLE Sales.Orders
@@ -22,3 +24,4 @@ CREATE TABLE Sales.Orders
     TotalAmount DECIMAL(12,2) NOT NULL
     DeliveryStatus NVARCHAR(30)
 );
+
