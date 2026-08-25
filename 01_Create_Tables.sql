@@ -20,4 +20,5 @@ CREATE TABLE Sales.Orders
     CustomerId INT NOT NULL,
     OrderDate DATETIME2 NOT NULL,
     TotalAmount DECIMAL(12,2) NOT NULL
+    DeliveryStatus NVARCHAR(30)
 );
