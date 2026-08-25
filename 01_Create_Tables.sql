@@ -13,3 +13,11 @@ CREATE TABLE dbo.Products
     Category NVARCHAR(100),
     Price DECIMAL(10,2)
 );
+
+CREATE TABLE Sales.Orders
+(
+    OrderId INT PRIMARY KEY,
+    CustomerId INT NOT NULL,
+    OrderDate DATETIME2 NOT NULL,
+    TotalAmount DECIMAL(12,2) NOT NULL
+);
